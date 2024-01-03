@@ -21,7 +21,7 @@ public class Frame2Home extends javax.swing.JFrame {
     
     public Frame2Home(String nama) {
         initComponents();
-        
+        SelamatDatang.setText("Selamat Datang Wahai " + nama + "...");
     }
 
     /**
@@ -33,11 +33,28 @@ public class Frame2Home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Tilawah = new javax.swing.JLabel();
+        Sholawat = new javax.swing.JLabel();
         LogOutBtn = new javax.swing.JButton();
+        SelamatDatang = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Tilawah.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TilawahMouseClicked(evt);
+            }
+        });
+        getContentPane().add(Tilawah, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 250, 240));
+
+        Sholawat.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SholawatMouseClicked(evt);
+            }
+        });
+        getContentPane().add(Sholawat, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 200, 290, 240));
 
         LogOutBtn.setText("Keluar");
         LogOutBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -47,8 +64,12 @@ public class Frame2Home extends javax.swing.JFrame {
         });
         getContentPane().add(LogOutBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 550, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/2.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        SelamatDatang.setFont(new java.awt.Font("Segoe UI Symbol", 1, 24)); // NOI18N
+        SelamatDatang.setText("Selamat Datang Wahai Hamba Allah....");
+        getContentPane().add(SelamatDatang, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 550, 30));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Assalamu’alaikum.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, -1, 640));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -67,6 +88,22 @@ public class Frame2Home extends javax.swing.JFrame {
         }
 
     }//GEN-LAST:event_LogOutBtnActionPerformed
+
+    private void TilawahMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TilawahMouseClicked
+        // TODO add your handling code here:
+        Frame3Tilawah f3 = new Frame3Tilawah();
+        f3.setLocationRelativeTo(null);
+        f3.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_TilawahMouseClicked
+
+    private void SholawatMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SholawatMouseClicked
+        // TODO add your handling code here:
+        Frame4Sholawat f4 = new Frame4Sholawat();
+        f4.setLocationRelativeTo(null);
+        f4.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_SholawatMouseClicked
 
     /**
      * @param args the command line arguments
@@ -105,6 +142,9 @@ public class Frame2Home extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton LogOutBtn;
+    private javax.swing.JLabel SelamatDatang;
+    private javax.swing.JLabel Sholawat;
+    private javax.swing.JLabel Tilawah;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

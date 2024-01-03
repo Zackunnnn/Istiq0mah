@@ -27,28 +27,291 @@ public class Frame5Habits extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        ChckTlwh1 = new javax.swing.JCheckBox();
+        ChckTlwh2 = new javax.swing.JCheckBox();
+        ChckTlwh3 = new javax.swing.JCheckBox();
+        ChckTlwh4 = new javax.swing.JCheckBox();
+        ChckTlwh5 = new javax.swing.JCheckBox();
+        ChckTlwh6 = new javax.swing.JCheckBox();
+        ChckTlwh7 = new javax.swing.JCheckBox();
+        ChckShlwt1 = new javax.swing.JCheckBox();
+        ChckShlwt2 = new javax.swing.JCheckBox();
+        ChckShlwt3 = new javax.swing.JCheckBox();
+        ChckShlwt4 = new javax.swing.JCheckBox();
+        ChckShlwt5 = new javax.swing.JCheckBox();
+        ChckShlwt6 = new javax.swing.JCheckBox();
+        ChckShlwt7 = new javax.swing.JCheckBox();
+        HomeBtn = new javax.swing.JButton();
+        faedahbn = new javax.swing.JButton();
+        faedahslwtbtn = new javax.swing.JButton();
+        SudahTlwh = new javax.swing.JLabel();
+        SudahShlwt = new javax.swing.JLabel();
+        SudahShlwt1 = new javax.swing.JLabel();
+        SudahTlwh1 = new javax.swing.JLabel();
+        JmlHal7 = new javax.swing.JLabel();
+        JmlHal4 = new javax.swing.JLabel();
+        JmlHal1 = new javax.swing.JLabel();
+        JmlHal2 = new javax.swing.JLabel();
+        JmlHal3 = new javax.swing.JLabel();
+        JmlHal5 = new javax.swing.JLabel();
+        JmlHal6 = new javax.swing.JLabel();
+        JmlShl7 = new javax.swing.JLabel();
+        JmlShl8 = new javax.swing.JLabel();
+        JmlShl9 = new javax.swing.JLabel();
+        JmlShl10 = new javax.swing.JLabel();
+        JmlShl11 = new javax.swing.JLabel();
+        JmlShl12 = new javax.swing.JLabel();
+        JmlShl13 = new javax.swing.JLabel();
+        JmlShl14 = new javax.swing.JLabel();
+        Background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/5.png"))); // NOI18N
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        ChckTlwh1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChckTlwh1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ChckTlwh1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 120, 30));
+
+        ChckTlwh2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChckTlwh2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ChckTlwh2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 190, 120, 20));
+
+        ChckTlwh3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChckTlwh3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ChckTlwh3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, 120, 30));
+
+        ChckTlwh4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChckTlwh4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ChckTlwh4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 260, 120, 20));
+
+        ChckTlwh5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChckTlwh5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ChckTlwh5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 120, 30));
+
+        ChckTlwh6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChckTlwh6ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ChckTlwh6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 330, 120, 20));
+
+        ChckTlwh7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChckTlwh7ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ChckTlwh7, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 369, 120, -1));
+
+        ChckShlwt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChckShlwt1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ChckShlwt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, 120, 30));
+
+        ChckShlwt2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChckShlwt2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ChckShlwt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 190, 120, 20));
+
+        ChckShlwt3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChckShlwt3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ChckShlwt3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 220, 120, 30));
+
+        ChckShlwt4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChckShlwt4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ChckShlwt4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 260, 120, 20));
+
+        ChckShlwt5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChckShlwt5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ChckShlwt5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 290, 120, 30));
+
+        ChckShlwt6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChckShlwt6ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ChckShlwt6, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 330, 120, 20));
+
+        ChckShlwt7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChckShlwt7ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ChckShlwt7, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 370, 120, 20));
+
+        HomeBtn.setText("Home");
+        HomeBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HomeBtnActionPerformed(evt);
+            }
+        });
+        jPanel1.add(HomeBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 550, -1, -1));
+
+        faedahbn.setText("Lihat Faedah Tilawah");
+        faedahbn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                faedahbnActionPerformed(evt);
+            }
+        });
+        jPanel1.add(faedahbn, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 230, -1, -1));
+
+        faedahslwtbtn.setText("Lihat Faedah Sholawat");
+        faedahslwtbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                faedahslwtbtnActionPerformed(evt);
+            }
+        });
+        jPanel1.add(faedahslwtbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 280, -1, -1));
+
+        SudahTlwh.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        SudahTlwh.setText("Jumlah Halaman.");
+        jPanel1.add(SudahTlwh, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 120, 120, -1));
+
+        SudahShlwt.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        SudahShlwt.setText("Jumlah Sholawat");
+        jPanel1.add(SudahShlwt, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, 120, -1));
+
+        SudahShlwt1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        SudahShlwt1.setText("Sudah Sholawat?");
+        jPanel1.add(SudahShlwt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 120, 120, -1));
+
+        SudahTlwh1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        SudahTlwh1.setText("Sudah Tilawah?");
+        jPanel1.add(SudahTlwh1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 120, 120, -1));
+        jPanel1.add(JmlHal7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 360, 120, 30));
+        jPanel1.add(JmlHal4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 260, 120, 20));
+        jPanel1.add(JmlHal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 150, 120, 30));
+        jPanel1.add(JmlHal2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, 120, 20));
+        jPanel1.add(JmlHal3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 220, 120, 30));
+        jPanel1.add(JmlHal5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 300, 120, 20));
+        jPanel1.add(JmlHal6, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 330, 120, 30));
+        jPanel1.add(JmlShl7, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 370, 120, 20));
+        jPanel1.add(JmlShl8, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 160, 120, 20));
+        jPanel1.add(JmlShl9, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 200, 120, 20));
+        jPanel1.add(JmlShl10, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 230, 120, 20));
+        jPanel1.add(JmlShl11, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 270, 120, 20));
+        jPanel1.add(JmlShl12, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 300, 120, 20));
+        jPanel1.add(JmlShl13, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 370, 120, 20));
+        jPanel1.add(JmlShl14, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 340, 120, 20));
+
+        Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/5.png"))); // NOI18N
+        jPanel1.add(Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void ChckTlwh1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChckTlwh1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ChckTlwh1ActionPerformed
+
+    private void ChckTlwh3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChckTlwh3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ChckTlwh3ActionPerformed
+
+    private void ChckTlwh2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChckTlwh2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ChckTlwh2ActionPerformed
+
+    private void ChckTlwh4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChckTlwh4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ChckTlwh4ActionPerformed
+
+    private void ChckTlwh5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChckTlwh5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ChckTlwh5ActionPerformed
+
+    private void ChckTlwh6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChckTlwh6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ChckTlwh6ActionPerformed
+
+    private void ChckTlwh7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChckTlwh7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ChckTlwh7ActionPerformed
+
+    private void ChckShlwt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChckShlwt1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ChckShlwt1ActionPerformed
+
+    private void ChckShlwt2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChckShlwt2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ChckShlwt2ActionPerformed
+
+    private void ChckShlwt3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChckShlwt3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ChckShlwt3ActionPerformed
+
+    private void ChckShlwt4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChckShlwt4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ChckShlwt4ActionPerformed
+
+    private void ChckShlwt5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChckShlwt5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ChckShlwt5ActionPerformed
+
+    private void ChckShlwt6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChckShlwt6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ChckShlwt6ActionPerformed
+
+    private void ChckShlwt7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChckShlwt7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ChckShlwt7ActionPerformed
+
+    private void HomeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeBtnActionPerformed
+        // TODO add your handling code here:
+        Frame2Home f2 = new Frame2Home ();
+        f2.setLocationRelativeTo(null);
+        f2.setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_HomeBtnActionPerformed
+
+    private void faedahbnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_faedahbnActionPerformed
+        // TODO add your handling code here:
+        Frame3Tilawah f3 = new Frame3Tilawah();
+        f3.setLocationRelativeTo(null);
+        f3.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_faedahbnActionPerformed
+
+    private void faedahslwtbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_faedahslwtbtnActionPerformed
+        // TODO add your handling code here:
+        Frame4Sholawat f4 = new Frame4Sholawat();
+        f4.setLocationRelativeTo(null);
+        f4.setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_faedahslwtbtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -86,7 +349,43 @@ public class Frame5Habits extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel Background;
+    private javax.swing.JCheckBox ChckShlwt1;
+    private javax.swing.JCheckBox ChckShlwt2;
+    private javax.swing.JCheckBox ChckShlwt3;
+    private javax.swing.JCheckBox ChckShlwt4;
+    private javax.swing.JCheckBox ChckShlwt5;
+    private javax.swing.JCheckBox ChckShlwt6;
+    private javax.swing.JCheckBox ChckShlwt7;
+    private javax.swing.JCheckBox ChckTlwh1;
+    private javax.swing.JCheckBox ChckTlwh2;
+    private javax.swing.JCheckBox ChckTlwh3;
+    private javax.swing.JCheckBox ChckTlwh4;
+    private javax.swing.JCheckBox ChckTlwh5;
+    private javax.swing.JCheckBox ChckTlwh6;
+    private javax.swing.JCheckBox ChckTlwh7;
+    private javax.swing.JButton HomeBtn;
+    private javax.swing.JLabel JmlHal1;
+    private javax.swing.JLabel JmlHal2;
+    private javax.swing.JLabel JmlHal3;
+    private javax.swing.JLabel JmlHal4;
+    private javax.swing.JLabel JmlHal5;
+    private javax.swing.JLabel JmlHal6;
+    private javax.swing.JLabel JmlHal7;
+    private javax.swing.JLabel JmlShl10;
+    private javax.swing.JLabel JmlShl11;
+    private javax.swing.JLabel JmlShl12;
+    private javax.swing.JLabel JmlShl13;
+    private javax.swing.JLabel JmlShl14;
+    private javax.swing.JLabel JmlShl7;
+    private javax.swing.JLabel JmlShl8;
+    private javax.swing.JLabel JmlShl9;
+    private javax.swing.JLabel SudahShlwt;
+    private javax.swing.JLabel SudahShlwt1;
+    private javax.swing.JLabel SudahTlwh;
+    private javax.swing.JLabel SudahTlwh1;
+    private javax.swing.JButton faedahbn;
+    private javax.swing.JButton faedahslwtbtn;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
