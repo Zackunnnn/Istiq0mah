@@ -211,21 +211,23 @@ public class Frame5Habits extends javax.swing.JFrame {
         });
         jPanel1.add(HomeBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 550, -1, -1));
 
+        faedahbn.setBackground(new java.awt.Color(0, 204, 255));
         faedahbn.setText("Lihat Faedah Tilawah");
         faedahbn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 faedahbnActionPerformed(evt);
             }
         });
-        jPanel1.add(faedahbn, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 230, -1, -1));
+        jPanel1.add(faedahbn, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 220, 140, 30));
 
+        faedahslwtbtn.setBackground(new java.awt.Color(51, 204, 255));
         faedahslwtbtn.setText("Lihat Faedah Sholawat");
         faedahslwtbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 faedahslwtbtnActionPerformed(evt);
             }
         });
-        jPanel1.add(faedahslwtbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 270, -1, -1));
+        jPanel1.add(faedahslwtbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 270, -1, 30));
 
         SudahTlwh.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         SudahTlwh.setText("Jumlah Halaman.");
