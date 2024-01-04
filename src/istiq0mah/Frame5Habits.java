@@ -95,6 +95,9 @@ public class Frame5Habits extends javax.swing.JFrame {
         UpdateBtn1 = new javax.swing.JButton();
         DoneSholawat = new javax.swing.JCheckBox();
         Hasil = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         Background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -355,6 +358,15 @@ public class Frame5Habits extends javax.swing.JFrame {
 
         Hasil.setText("Jumlah Sholawat mu 0");
         jPanel1.add(Hasil, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 510, -1, -1));
+
+        jLabel4.setText("pada Hal. Awal dan Hal. Akhir");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 170, 20));
+
+        jLabel5.setText("Masukan halaman Al-Qur'an ");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, 170, -1));
+
+        jLabel6.setText("yang telah kamu baca ");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 170, -1));
 
         Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/5.png"))); // NOI18N
         jPanel1.add(Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -754,6 +766,9 @@ public class Frame5Habits extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
