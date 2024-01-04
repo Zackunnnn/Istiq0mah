@@ -4,6 +4,8 @@
  */
 package istiq0mah;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Ammar Dzakwan
@@ -78,13 +80,17 @@ public class Frame1Salam extends javax.swing.JFrame {
 
     private void OkButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OkButtonActionPerformed
         // TODO add your handling code here:
+        if (TxtNama.getText().equals("")){
+            JOptionPane.showMessageDialog(rootPane, "Masukin namamu dulu yukk..");
+        }   else {
         String nama = TxtNama.getText();
 
         Frame2Home f2 = new Frame2Home(nama);
         f2.setLocationRelativeTo(null);
         f2.setVisible(true);
         this.setVisible(false);
-
+        
+        }
     }//GEN-LAST:event_OkButtonActionPerformed
 
     /**

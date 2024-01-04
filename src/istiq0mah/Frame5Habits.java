@@ -11,7 +11,13 @@ import javax.swing.JOptionPane;
  * @author Ammar Dzakwan
  */
 public class Frame5Habits extends javax.swing.JFrame {
-
+    int[] TotalTlwh = new int[7];
+    int[] TotalShlwt = new int[7];
+    int i;
+    
+    
+    
+    
     /**
      * Creates new form Frame5Habits
      */
@@ -337,7 +343,7 @@ public class Frame5Habits extends javax.swing.JFrame {
                 UpdateBtn1ActionPerformed(evt);
             }
         });
-        jPanel1.add(UpdateBtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 480, 70, -1));
+        jPanel1.add(UpdateBtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 480, 90, -1));
 
         DoneSholawat.setText("Done ");
         DoneSholawat.addActionListener(new java.awt.event.ActionListener() {
@@ -446,17 +452,17 @@ public class Frame5Habits extends javax.swing.JFrame {
         //0=yes, 1=no, 2=cancel
 
         if (input == 0) {
-        Frame2Home f2 = new Frame2Home ();
-        f2.setLocationRelativeTo(null);
-        f2.setVisible(true);
+        Frame3Tilawah f3 = new Frame3Tilawah();
+        f3.setLocationRelativeTo(null);
+        f3.setVisible(true);
         this.setVisible(false);
         
         } 
         
         } else if (isi == 0){
-            Frame2Home f2 = new Frame2Home ();
-        f2.setLocationRelativeTo(null);
-        f2.setVisible(true);
+        Frame3Tilawah f3 = new Frame3Tilawah();
+        f3.setLocationRelativeTo(null);
+        f3.setVisible(true);
         this.setVisible(false);
         }
     }//GEN-LAST:event_faedahbnActionPerformed
@@ -469,16 +475,16 @@ public class Frame5Habits extends javax.swing.JFrame {
         //0=yes, 1=no, 2=cancel
 
         if (input == 0) {
-        Frame2Home f2 = new Frame2Home ();
-        f2.setLocationRelativeTo(null);
-        f2.setVisible(true);
+        Frame4Sholawat f4 = new Frame4Sholawat();
+        f4.setLocationRelativeTo(null);
+        f4.setVisible(true);
         this.setVisible(false);
         } 
         
         } else if (isi == 0) {
-            Frame2Home f2 = new Frame2Home ();
-        f2.setLocationRelativeTo(null);
-        f2.setVisible(true);
+        Frame4Sholawat f4 = new Frame4Sholawat();
+        f4.setLocationRelativeTo(null);
+        f4.setVisible(true);
         this.setVisible(false);
         }
     }//GEN-LAST:event_faedahslwtbtnActionPerformed
@@ -491,12 +497,24 @@ public class Frame5Habits extends javax.swing.JFrame {
         // TODO add your handling code here:
         String HalAwal = HalAwalTxt.getText();
         String HalAkhir = HalAkhirTxt.getText();
-        int awal = Integer.parseInt(HalAwal);
-        int akhir = Integer.parseInt(HalAkhir);
         
+        try {
+            
+            int awal = Integer.parseInt(HalAwal);
+            int akhir = Integer.parseInt(HalAkhir);
+        
+        if (awal < 1 || akhir > 604){
+            JOptionPane.showMessageDialog(rootPane, "Halaman di Al-Qur'an hanya dari\nHal.1 - Hal.604");
+            
+        } else {  
+            
         if (Check.isSelected()) {
             JOptionPane.showMessageDialog(rootPane, "Sukses");
             int jumlah = akhir - awal + 1;
+            
+            if (jumlah < 0) {
+                JOptionPane.showMessageDialog(rootPane, "Kamu baca mundur?");
+            } else {
             Total.setText("Total "+ jumlah + " Halaman");
         
         switch (Harinya.getText()) {
@@ -539,6 +557,14 @@ public class Frame5Habits extends javax.swing.JFrame {
         }
         
         isi = 1;
+        }
+        }
+        } catch(NumberFormatException e) {
+            JOptionPane.showMessageDialog(rootPane, "Gak boleh masukin huruf!");
+            //JOptionPane.showMessageDialog(rootPane, e, HalAwal, HEIGHT, icon);
+        }
+        
+        
     }//GEN-LAST:event_UpdateBtnActionPerformed
 
     private void CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CheckActionPerformed
@@ -557,8 +583,10 @@ public class Frame5Habits extends javax.swing.JFrame {
 
     private void UpdateBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateBtn1ActionPerformed
         // TODO add your handling code here:
-        String sholawat = JumlahSholawatTxt.getText();
-        int jumlah = Integer.parseInt(sholawat);
+        
+        try {
+            String sholawat = JumlahSholawatTxt.getText();
+            int jumlah = Integer.parseInt(sholawat);
             
         if (DoneSholawat.isSelected()) {
             
@@ -614,6 +642,11 @@ public class Frame5Habits extends javax.swing.JFrame {
         }
         }
         isi = 1;
+        
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(rootPane, "Masukan hanya angka!");
+        }
+        
     }//GEN-LAST:event_UpdateBtn1ActionPerformed
 
     private void PilihHariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PilihHariActionPerformed

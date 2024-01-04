@@ -54,7 +54,7 @@ public class Frame2Home extends javax.swing.JFrame {
                 SholawatMouseClicked(evt);
             }
         });
-        getContentPane().add(Sholawat, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 200, 290, 240));
+        getContentPane().add(Sholawat, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, 290, 240));
 
         LogOutBtn.setText("Keluar");
         LogOutBtn.addActionListener(new java.awt.event.ActionListener() {
